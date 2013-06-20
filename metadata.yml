@@ -1,287 +1,283 @@
---- !ruby/object:Gem::Specification 
+--- !ruby/object:Gem::Specification
 name: vagrant
-version: !ruby/object:Gem::Version 
-  hash: 17
+version: !ruby/object:Gem::Version
+  version: 1.0.7
   prerelease: 
-  segments: 
-  - 1
-  - 0
-  - 3
-  version: 1.0.3
 platform: ruby
-authors: 
+authors:
 - Mitchell Hashimoto
 - John Bender
 autorequire: 
 bindir: bin
 cert_chain: []
-
-date: 2012-05-02 00:00:00 Z
-dependencies: 
-- !ruby/object:Gem::Dependency 
+date: 2013-03-14 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
   name: archive-tar-minitar
-  prerelease: false
-  type: :runtime
-  requirement: &id001 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
-    - - "="
-      - !ruby/object:Gem::Version 
-        hash: 15
-        segments: 
-        - 0
-        - 5
-        - 2
+    requirements:
+    - - '='
+      - !ruby/object:Gem::Version
         version: 0.5.2
-  version_requirements: *id001
-- !ruby/object:Gem::Dependency 
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - '='
+      - !ruby/object:Gem::Version
+        version: 0.5.2
+- !ruby/object:Gem::Dependency
   name: childprocess
-  prerelease: false
-  type: :runtime
-  requirement: &id002 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 17
-        segments: 
-        - 0
-        - 3
-        - 1
+      - !ruby/object:Gem::Version
         version: 0.3.1
-  version_requirements: *id002
-- !ruby/object:Gem::Dependency 
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
+        version: 0.3.1
+- !ruby/object:Gem::Dependency
   name: erubis
-  prerelease: false
-  type: :runtime
-  requirement: &id003 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 19
-        segments: 
-        - 2
-        - 7
-        - 0
+      - !ruby/object:Gem::Version
         version: 2.7.0
-  version_requirements: *id003
-- !ruby/object:Gem::Dependency 
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
+        version: 2.7.0
+- !ruby/object:Gem::Dependency
   name: i18n
-  prerelease: false
-  type: :runtime
-  requirement: &id004 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 7
-        segments: 
-        - 0
-        - 6
-        - 0
+      - !ruby/object:Gem::Version
         version: 0.6.0
-  version_requirements: *id004
-- !ruby/object:Gem::Dependency 
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
+        version: 0.6.0
+- !ruby/object:Gem::Dependency
   name: json
-  prerelease: false
-  type: :runtime
-  requirement: &id005 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
-    - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 1
-        segments: 
-        - 1
-        - 5
-        - 1
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
         version: 1.5.1
-  version_requirements: *id005
-- !ruby/object:Gem::Dependency 
+    - - <
+      - !ruby/object:Gem::Version
+        version: 1.8.0
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: 1.5.1
+    - - <
+      - !ruby/object:Gem::Version
+        version: 1.8.0
+- !ruby/object:Gem::Dependency
   name: log4r
-  prerelease: false
-  type: :runtime
-  requirement: &id006 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 1
-        segments: 
-        - 1
-        - 1
-        - 9
+      - !ruby/object:Gem::Version
         version: 1.1.9
-  version_requirements: *id006
-- !ruby/object:Gem::Dependency 
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
+        version: 1.1.9
+- !ruby/object:Gem::Dependency
   name: net-ssh
-  prerelease: false
-  type: :runtime
-  requirement: &id007 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 3
-        segments: 
-        - 2
-        - 2
-        - 2
+      - !ruby/object:Gem::Version
         version: 2.2.2
-  version_requirements: *id007
-- !ruby/object:Gem::Dependency 
-  name: net-scp
-  prerelease: false
   type: :runtime
-  requirement: &id008 !ruby/object:Gem::Requirement 
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 31
-        segments: 
-        - 1
-        - 0
-        - 4
+      - !ruby/object:Gem::Version
+        version: 2.2.2
+- !ruby/object:Gem::Dependency
+  name: net-scp
+  requirement: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
         version: 1.0.4
-  version_requirements: *id008
-- !ruby/object:Gem::Dependency 
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
+        version: 1.0.4
+- !ruby/object:Gem::Dependency
   name: rake
-  prerelease: false
-  type: :development
-  requirement: &id009 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
-    - - ">="
-      - !ruby/object:Gem::Version 
-        hash: 3
-        segments: 
-        - 0
-        version: "0"
-  version_requirements: *id009
-- !ruby/object:Gem::Dependency 
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
   name: contest
-  prerelease: false
-  type: :development
-  requirement: &id010 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
-    - - ">="
-      - !ruby/object:Gem::Version 
-        hash: 31
-        segments: 
-        - 0
-        - 1
-        - 2
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
         version: 0.1.2
-  version_requirements: *id010
-- !ruby/object:Gem::Dependency 
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: 0.1.2
+- !ruby/object:Gem::Dependency
   name: minitest
-  prerelease: false
-  type: :development
-  requirement: &id011 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 25
-        segments: 
-        - 2
-        - 5
-        - 1
+      - !ruby/object:Gem::Version
         version: 2.5.1
-  version_requirements: *id011
-- !ruby/object:Gem::Dependency 
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
+        version: 2.5.1
+- !ruby/object:Gem::Dependency
   name: mocha
-  prerelease: false
-  type: :development
-  requirement: &id012 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
-    - - ">="
-      - !ruby/object:Gem::Version 
-        hash: 3
-        segments: 
-        - 0
-        version: "0"
-  version_requirements: *id012
-- !ruby/object:Gem::Dependency 
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
   name: rspec-core
-  prerelease: false
-  type: :development
-  requirement: &id013 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 47
-        segments: 
-        - 2
-        - 8
-        - 0
+      - !ruby/object:Gem::Version
         version: 2.8.0
-  version_requirements: *id013
-- !ruby/object:Gem::Dependency 
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
+        version: 2.8.0
+- !ruby/object:Gem::Dependency
   name: rspec-expectations
-  prerelease: false
-  type: :development
-  requirement: &id014 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 47
-        segments: 
-        - 2
-        - 8
-        - 0
+      - !ruby/object:Gem::Version
         version: 2.8.0
-  version_requirements: *id014
-- !ruby/object:Gem::Dependency 
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
+        version: 2.8.0
+- !ruby/object:Gem::Dependency
   name: rspec-mocks
-  prerelease: false
-  type: :development
-  requirement: &id015 !ruby/object:Gem::Requirement 
+  requirement: !ruby/object:Gem::Requirement
     none: false
-    requirements: 
+    requirements:
     - - ~>
-      - !ruby/object:Gem::Version 
-        hash: 47
-        segments: 
-        - 2
-        - 8
-        - 0
+      - !ruby/object:Gem::Version
         version: 2.8.0
-  version_requirements: *id015
-description: Vagrant is a tool for building and distributing virtualized development environments.
-email: 
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ~>
+      - !ruby/object:Gem::Version
+        version: 2.8.0
+description: Vagrant is a tool for building and distributing virtualized development
+  environments.
+email:
 - mitchell.hashimoto@gmail.com
 - john.m.bender@gmail.com
-executables: 
+executables:
 - vagrant
 extensions: []
-
 extra_rdoc_files: []
-
-files: 
-- .gitignore
-- .yardopts
-- CHANGELOG.md
-- Gemfile
-- LICENSE
-- README.md
-- Rakefile
+files:
 - bin/vagrant
+- CHANGELOG.md
 - config/default.rb
-- contrib/README.md
 - contrib/emacs/vagrant.el
+- contrib/README.md
 - contrib/vim/vagrantfile.vim
+- Gemfile
 - keys/README.md
 - keys/vagrant
 - keys/vagrant.pub
-- lib/vagrant.rb
-- lib/vagrant/action.rb
 - lib/vagrant/action/box/destroy.rb
 - lib/vagrant/action/box/download.rb
 - lib/vagrant/action/box/package.rb
@@ -328,10 +324,10 @@ files:
 - lib/vagrant/action/vm/share_folders.rb
 - lib/vagrant/action/vm/suspend.rb
 - lib/vagrant/action/warden.rb
+- lib/vagrant/action.rb
 - lib/vagrant/box.rb
 - lib/vagrant/box_collection.rb
 - lib/vagrant/cli.rb
-- lib/vagrant/command.rb
 - lib/vagrant/command/base.rb
 - lib/vagrant/command/box.rb
 - lib/vagrant/command/box_add.rb
@@ -352,10 +348,10 @@ files:
 - lib/vagrant/command/status.rb
 - lib/vagrant/command/suspend.rb
 - lib/vagrant/command/up.rb
-- lib/vagrant/communication.rb
+- lib/vagrant/command.rb
 - lib/vagrant/communication/base.rb
 - lib/vagrant/communication/ssh.rb
-- lib/vagrant/config.rb
+- lib/vagrant/communication.rb
 - lib/vagrant/config/base.rb
 - lib/vagrant/config/container.rb
 - lib/vagrant/config/error_recorder.rb
@@ -365,37 +361,38 @@ files:
 - lib/vagrant/config/ssh.rb
 - lib/vagrant/config/top.rb
 - lib/vagrant/config/vagrant.rb
-- lib/vagrant/config/vm.rb
 - lib/vagrant/config/vm/provisioner.rb
 - lib/vagrant/config/vm/sub_vm.rb
+- lib/vagrant/config/vm.rb
+- lib/vagrant/config.rb
 - lib/vagrant/data_store.rb
-- lib/vagrant/downloaders.rb
 - lib/vagrant/downloaders/base.rb
 - lib/vagrant/downloaders/file.rb
 - lib/vagrant/downloaders/http.rb
-- lib/vagrant/driver.rb
+- lib/vagrant/downloaders.rb
 - lib/vagrant/driver/virtualbox.rb
 - lib/vagrant/driver/virtualbox_4_0.rb
 - lib/vagrant/driver/virtualbox_4_1.rb
+- lib/vagrant/driver/virtualbox_4_2.rb
 - lib/vagrant/driver/virtualbox_base.rb
+- lib/vagrant/driver.rb
 - lib/vagrant/environment.rb
 - lib/vagrant/errors.rb
-- lib/vagrant/guest.rb
 - lib/vagrant/guest/arch.rb
 - lib/vagrant/guest/base.rb
 - lib/vagrant/guest/debian.rb
 - lib/vagrant/guest/fedora.rb
 - lib/vagrant/guest/freebsd.rb
 - lib/vagrant/guest/gentoo.rb
-- lib/vagrant/guest/linux.rb
 - lib/vagrant/guest/linux/config.rb
 - lib/vagrant/guest/linux/error.rb
+- lib/vagrant/guest/linux.rb
 - lib/vagrant/guest/openbsd.rb
 - lib/vagrant/guest/redhat.rb
 - lib/vagrant/guest/solaris.rb
 - lib/vagrant/guest/suse.rb
 - lib/vagrant/guest/ubuntu.rb
-- lib/vagrant/hosts.rb
+- lib/vagrant/guest.rb
 - lib/vagrant/hosts/arch.rb
 - lib/vagrant/hosts/base.rb
 - lib/vagrant/hosts/bsd.rb
@@ -405,8 +402,8 @@ files:
 - lib/vagrant/hosts/linux.rb
 - lib/vagrant/hosts/opensuse.rb
 - lib/vagrant/hosts/windows.rb
+- lib/vagrant/hosts.rb
 - lib/vagrant/plugin.rb
-- lib/vagrant/provisioners.rb
 - lib/vagrant/provisioners/base.rb
 - lib/vagrant/provisioners/chef.rb
 - lib/vagrant/provisioners/chef_client.rb
@@ -414,11 +411,11 @@ files:
 - lib/vagrant/provisioners/puppet.rb
 - lib/vagrant/provisioners/puppet_server.rb
 - lib/vagrant/provisioners/shell.rb
+- lib/vagrant/provisioners.rb
 - lib/vagrant/registry.rb
 - lib/vagrant/ssh.rb
 - lib/vagrant/test_helpers.rb
 - lib/vagrant/ui.rb
-- lib/vagrant/util.rb
 - lib/vagrant/util/ansi_escape_code_remover.rb
 - lib/vagrant/util/busy.rb
 - lib/vagrant/util/counter.rb
@@ -435,8 +432,13 @@ files:
 - lib/vagrant/util/stacked_proc_runner.rb
 - lib/vagrant/util/subprocess.rb
 - lib/vagrant/util/template_renderer.rb
+- lib/vagrant/util.rb
 - lib/vagrant/version.rb
 - lib/vagrant/vm.rb
+- lib/vagrant.rb
+- LICENSE
+- Rakefile
+- README.md
 - tasks/acceptance.rake
 - tasks/bundler.rake
 - tasks/test.rake
@@ -475,12 +477,12 @@ files:
 - test/acceptance/provisioning/shell_test.rb
 - test/acceptance/resume_test.rb
 - test/acceptance/shared_folders_test.rb
-- test/acceptance/skeletons/chef_solo_basic/README.md
 - test/acceptance/skeletons/chef_solo_basic/cookbooks/basic/recipes/default.rb
-- test/acceptance/skeletons/chef_solo_json/README.md
+- test/acceptance/skeletons/chef_solo_basic/README.md
 - test/acceptance/skeletons/chef_solo_json/cookbooks/basic/recipes/default.rb
-- test/acceptance/skeletons/provisioner_multi/README.md
+- test/acceptance/skeletons/chef_solo_json/README.md
 - test/acceptance/skeletons/provisioner_multi/cookbooks/basic/recipes/default.rb
+- test/acceptance/skeletons/provisioner_multi/README.md
 - test/acceptance/ssh_test.rb
 - test/acceptance/support/config.rb
 - test/acceptance/support/isolated_environment.rb
@@ -497,7 +499,6 @@ files:
 - test/acceptance/up_with_box_url.rb
 - test/acceptance/vagrant_test.rb
 - test/acceptance/version_test.rb
-- test/buildbot/README.md
 - test/buildbot/buildbot_config/__init__.py
 - test/buildbot/buildbot_config/config/__init__.py
 - test/buildbot/buildbot_config/config/loader.py
@@ -510,8 +511,8 @@ files:
 - test/buildbot/buildbot_config/master/schedulers.py
 - test/buildbot/buildbot_config/master/slaves.py
 - test/buildbot/buildbot_config/master/status.py
-- test/buildbot/master/Makefile.sample
 - test/buildbot/master/buildbot.tac
+- test/buildbot/master/Makefile.sample
 - test/buildbot/master/master.cfg
 - test/buildbot/master/public_html/bg_gradient.jpg
 - test/buildbot/master/public_html/default.css
@@ -551,6 +552,7 @@ files:
 - test/buildbot/master/templates/macros/forms.html
 - test/buildbot/master/templates/root.html
 - test/buildbot/master/templates/waterfall.html
+- test/buildbot/README.md
 - test/buildbot/requirements.txt
 - test/buildbot/scripts/deploy.sh
 - test/buildbot/scripts/setup.sh
@@ -676,40 +678,33 @@ files:
 - test/unit_legacy/vagrant/util/template_renderer_test.rb
 - test/unit_legacy/vagrant/vm_test.rb
 - vagrant.gemspec
+- .gitignore
+- .yardopts
 homepage: http://vagrantup.com
 licenses: []
-
 post_install_message: 
 rdoc_options: []
-
-require_paths: 
+require_paths:
 - lib
-required_ruby_version: !ruby/object:Gem::Requirement 
+required_ruby_version: !ruby/object:Gem::Requirement
   none: false
-  requirements: 
-  - - ">="
-    - !ruby/object:Gem::Version 
-      hash: 3
-      segments: 
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+      segments:
       - 0
-      version: "0"
-required_rubygems_version: !ruby/object:Gem::Requirement 
+      hash: -4595047100771247865
+required_rubygems_version: !ruby/object:Gem::Requirement
   none: false
-  requirements: 
-  - - ">="
-    - !ruby/object:Gem::Version 
-      hash: 23
-      segments: 
-      - 1
-      - 3
-      - 6
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
       version: 1.3.6
 requirements: []
-
 rubyforge_project: vagrant
-rubygems_version: 1.8.6
+rubygems_version: 1.8.23
 signing_key: 
 specification_version: 3
 summary: Build and distribute virtualized development environments.
 test_files: []
-
