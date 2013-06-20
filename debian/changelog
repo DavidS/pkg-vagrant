@@ -1,11 +1,15 @@
-vagrant (1.0.3-2) UNRELEASED; urgency=low
+vagrant (1.0.7-0.1) UNRELEASED; urgency=low
 
+  [ Laurent Bigonville ]
   * debian/watch: Update watch file URL, vagrant is no longer distributed as a
     gem (Closes: #711110)
   * debian/control: Use canonical URL for VCS fields
   * debian/control: Bump Standards-Version to 3.9.4 (no further changes)
 
- -- Laurent Bigonville <bigon@debian.org>  Tue, 04 Jun 2013 22:08:49 +0200
+  [ David Schmitt ]
+  * New upstream release: 1.0.7 (Closes: #697280, #710242)
+
+ -- David Schmitt <david@dasz.at>  Thu, 20 Jun 2013 19:48:16 +0200
 
 vagrant (1.0.3-1) unstable; urgency=low
 
